@@ -288,10 +288,10 @@ header .container-object {
 }
 
 
-/* section footer */
+/* section fo */
 
 
-.footer {
+.fo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -373,10 +373,107 @@ header .container-object {
     transform: scale(0.9);
 }
 
+/* contact */
+
+.list-Contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list-Contact > article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-Contact > article > div > i {
+  font-size: 2.5rem;
+  color: var(--blanco-secundario);
+}
+
+.list-Contact > article p {
+  font-size: 1.5rem;
+  color: var(--blanco);
+}
+
+
+/* footer */
+/* Footer base */
+.footer {
+    background-color: var(--barra);
+    color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section styles */
+.footer-section h3,
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul li,
+.footer-bottom {
+  font-size: 14px;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+/* Social icons */
+.social-icons a {
+  font-size: 18px;
+  color: #9ca3af;
+  margin-right: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #374151;
+  font-size: 13px;
+}
 
 /* 📌 PANTALLAS GRANDES (Más de 1024px) */
 @media (min-width: 1024px) {
-    .footer {
+    .fo {
         flex-direction: row;
         justify-content: space-between;
         padding: 40px;
@@ -398,7 +495,7 @@ header .container-object {
 
 /* 📌 TABLETS (Entre 768px y 1023px) */
 @media (max-width: 1023px) {
-    .footer {
+    .fo {
         flex-direction: column;
         align-items: center;
         padding: 30px;
@@ -428,7 +525,7 @@ header .container-object {
 
 /* 📌 MÓVILES (Menos de 768px) */
 @media (max-width: 767px) {
-    .footer {
+    .fo {
         display: flex;
         flex-direction: column;
         padding: 20px;
